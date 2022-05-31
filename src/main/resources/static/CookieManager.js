@@ -1,6 +1,8 @@
+import java.util.UUID;
+
 function checkCookie() {
-  let username = getCookie("username");
-  if (username != "") {
+  let userid = getCookie("userid");
+  if (userid != "") {
    alert("Welcome again " + username);
   } else {
     username = prompt("Please enter your name:", "");
