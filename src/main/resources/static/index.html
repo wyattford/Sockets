@@ -8,43 +8,13 @@
     <script src="/webjars/sockjs-client/sockjs.min.js"></script>
     <script src="/webjars/stomp-websocket/stomp.min.js"></script>
     <script src="/app.js"></script>
+    <script src="/GameManager.js"></script>
 </head>
   <body>
     <noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
         enabled. Please enable Javascript and reload this page!</h2></noscript>
     <div id="main-content" class="container">
-        <div class="row">
-            <div class="col-md-6 center">
-                <form class="form-inline">
-                    <div class="form-group">
-                      
-                      <button id="connect" class="btn btn-default" type="submit">Connect</button>
-                      <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect
-                      </button>
-                    </div>
-                </form>
-              <form hidden id="messageForm" class="form-inline">
-                    <div class="form-group">
-                      <input type="text" id="username" class="form-control" placeholder="Username">
-                      <input type="text" id="message" class="form-control" placeholder="Your message">
-                      <button id="sendMessage" class="btn btn-default" type="submit">Send</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <table hidden id="conversation" class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>Messages</th>
-                    </tr>
-                    </thead>
-                    <tbody id="messageBoard">
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        <h2 id="title">Wordle Clone!</h2>
     </div>
   </body>
 </html>
